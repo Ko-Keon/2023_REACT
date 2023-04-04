@@ -35,6 +35,7 @@ export default class MemoComp extends Component {
     // 출력 : return을 통해서 화면에 출력 가능
     // 시간을 출력하기 위해 time 값 가져옴
     printClock = (time)=> {
+        // 가능하다면 this.setState 사용 X
         const hours = time.getHours();
         const minutes = time.getMinutes();
         const seconds = time.getSeconds();
