@@ -57,7 +57,7 @@ const TodoApp = () => {
         setBtnState("today")
     }
 
-    const todolist = btnState==="all" ? todos : todos.filter(todo=>todo.date=="4월6일")
+    const todolist = btnState==="all" ? todos : todos.filter(todo=>todo.date==todayDate())
 
 
 
