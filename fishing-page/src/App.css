@@ -65,6 +65,7 @@ h1 { font-size: 3.5rem; margin: 20px 0; font-weight: bold;}
   padding: 0 20px;
   border-bottom: 1px solid black;
   transition: all 1s;
+  
 }
 
 .nav-menu {
@@ -83,13 +84,13 @@ h1 { font-size: 3.5rem; margin: 20px 0; font-weight: bold;}
 }
 
 /* 스크롤 이벤트가 발생했을 때 바뀌는 네비게이션 디자인 */
-.nav.scrollon {
+#nav.scrollon {
   color: white;
-  background-color: darkkhaki;
+  background-color: rgb(95, 118, 247);
   transition: all 1s;
 }
 
-.nav.nav.scrollon li>a {
+#nav.nav.scrollon li>a {
   color: white;
   transition: all 1s;
 }

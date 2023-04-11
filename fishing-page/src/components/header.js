@@ -27,8 +27,9 @@ function Header() {
         <nav className="nav" id="nav">
             <div className="logo">Busan Bada Lure</div>
             <ul className="nav-menu">
-                <li><a href="#intro">소개</a></li>
-                <li><a href="#Line">조행기</a></li>
+                <li><a href="#intro">메인</a></li>
+                <li><a href="#Line">날씨&물때</a></li>
+                <li><a href="#Line">포인트 정보</a></li>
             </ul>
         </nav>
     </header>
