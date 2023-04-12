@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react'
 import "./css/mainSlide.css"
 
 const images = [
-    'https://ifh.cc/g/FMzJKg.jpg',
-    'https://ifh.cc/g/Aop6WZ.jpg',
-    'https://ifh.cc/g/74QcCb.jpg'
+    'https://ifh.cc/g/29nFz2.jpg',
+    'https://ifh.cc/g/CQ6NSX.jpg',
+    'https://ifh.cc/g/NkoM4a.jpg',
+    'https://ifh.cc/g/X46BHf.jpg'
     ];
 
     function MainSlide() {

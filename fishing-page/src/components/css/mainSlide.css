@@ -1,4 +1,6 @@
 #main-slide-img {
     background-size: cover;
-    width: 100%;
+    background-position: center center;
+    width: 100vw;
+    height: 1300px;
 }

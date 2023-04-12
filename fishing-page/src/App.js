@@ -4,6 +4,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 import Main from './components/main';
 import Weather from './components/weather';
+import Point from './components/point';
 
 function App() {
   
@@ -12,8 +13,7 @@ function App() {
       <Header/>
       <Main/>
       <Weather/>
-
-
+      <Point/>
       <Footer/>
     </div>
   )
