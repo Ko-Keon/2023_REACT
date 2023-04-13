@@ -39,10 +39,6 @@
 
 
 
-
-
-/* 태그 디자인 */
-/* 부드러운 스크롤 */
 html {
   scroll-behavior: smooth;
 }
@@ -51,7 +47,7 @@ a { color: black; text-decoration: none;}
 
 h1 { font-size: 3.5rem; margin: 20px 0; font-weight: bold;}
 
-/* 헤더와 네비게이션바 */
+
 .head {
   position: fixed;
   width: 100vw;
@@ -68,9 +64,7 @@ h1 { font-size: 3.5rem; margin: 20px 0; font-weight: bold;}
   
 }
 
-.nav-menu {
-  display: flex;
-}
+
 
 .nav-menu li {
   margin: 35px 60px;
@@ -83,7 +77,6 @@ h1 { font-size: 3.5rem; margin: 20px 0; font-weight: bold;}
   font-weight: bold;
 }
 
-/* 스크롤 이벤트가 발생했을 때 바뀌는 네비게이션 디자인 */
 #nav.scrollon {
   color: white;
   background-color: rgb(95, 118, 247);
@@ -96,33 +89,11 @@ h1 { font-size: 3.5rem; margin: 20px 0; font-weight: bold;}
 }
 
 
-/*  메인의 섹션 */
 section {
   height: 400px;
 }
 
-/* 섹션1 배너 */
-.banner {
-  height: 100vh;
-}
 
-.banner .scroll-icon {
-  position: absolute;
-  bottom: 50px; left: 50%;
-  font-size: 2.5rem;
-  animation-name: movingIcon;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-}
-
-/* 아이콘이 위아래로 움직이는 애니메이션 작성 */
-@keyframes movingIcon {
-  0% {transform: translate(0,0);}
-  70% {transform: translate(0,20px);}
-  100% {transform: translate(0,0);}
-}
-
-/* 섹션2 소개 */
 .intro-scroll {
   display: flex;
   align-items: center;
@@ -132,36 +103,24 @@ section {
   opacity: 0;
 }
 
-/* 이벤트로 클래스가 붙었을 때 디자인 */
 .intro-scroll.scrollon {
   opacity: 1;
   transition: all 2s;
 }
 
-.intro-scroll .green-intro {
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 30px;
-  background-color: white;
-  border-radius: 25px;
-  box-shadow: 10px 10px 10px rgb(85, 84, 84);
-  transform: translateX(-400px);
-}
-
-/* 이벤트 발생시 추가되는 클래스 */
-.intro-scroll.scrollon .green-intro {
+.intro-scroll.scrollon .fishing-intro {
   transform: translateX(0);
   transition: all 2s;
 }
 
-.intro-scroll .green-intro-image {
+.intro-scroll .fishing-intro-image {
   width: 100vw;
-  height: inherit; /*부모의 높이를 가져옴*/
+  height: inherit; 
 }
 
-/* 섹션 3 슬라이더 버튼 */
+
+
+
 .pictures {
   display: grid;
   grid-template-columns: 3fr 2fr;
@@ -181,7 +140,7 @@ section {
 .footer {
   box-sizing: border-box;
   height: 200px;
-  background-color: black;
+  background-color: rgb(6, 35, 161);
   color: white;
   padding: 40px 60px;
   display: flex;

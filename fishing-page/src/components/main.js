@@ -3,6 +3,7 @@ import MainSlide from './mainSlide'
 import MainIntro from './mainIntro'
 import MainTrip from './mainTrip'
 
+
 export class Main extends Component {
   render() {
     return (

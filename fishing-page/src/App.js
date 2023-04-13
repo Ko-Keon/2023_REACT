@@ -3,7 +3,7 @@ import {Routes,Route} from 'react-router-dom'
 import Header from './components/header';
 import Footer from './components/footer';
 import Main from './components/main';
-import Weather from './components/weather';
+import WeatherTime from './components/weatherTime';
 import Point from './components/point';
 
 function App() {
@@ -11,9 +11,11 @@ function App() {
   return (
     <div>
       <Header/>
-      <Main/>
-      <Weather/>
-      <Point/>
+      <Routes>
+        <Route path='/' element={<Main/>}/>
+        <Route path='/weather' element={<WeatherTime/>}/>
+        <Route path='/point' element={<Point/>}/>
+      </Routes>
       <Footer/>
     </div>
   )
