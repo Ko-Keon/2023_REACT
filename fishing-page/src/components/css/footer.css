@@ -1,0 +1,41 @@
+/* 푸터 */
+.footer {
+    box-sizing: border-box;
+    height: 200px;
+    background-color: rgb(6, 35, 161);
+    color: white;
+    padding: 40px 60px;
+    display: flex;
+}
+
+.footer .footer-logo {
+    font-size: 1.5rem;
+    margin-right: 80px;
+}
+
+.footer .info {
+    display: grid;
+    font-size: 0.8rem;
+}
+
+.footer .info .top {
+    position: fixed;
+    bottom: 30px;
+    color: green;
+    border: solid 1px green;
+    background-color: inherit;
+    right: 50px;
+    padding: 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.top {
+    opacity: 0;
+}
+
+.top.scrollon {
+    opacity: 1;
+    transition: 0.5s;
+}

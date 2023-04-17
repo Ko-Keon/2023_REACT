@@ -1,0 +1,42 @@
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.head {
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    padding: 0 20px;
+    border-bottom: 1px solid black;
+    transition: all 1s;
+    
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#nav.scrollon {
+    color: white;
+    background-color: rgb(95, 118, 247);
+    transition: all 1s;
+}
+
+#nav.nav.scrollon li>a {
+    color: white;
+    transition: all 1s;
+}

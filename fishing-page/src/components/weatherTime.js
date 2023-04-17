@@ -1,12 +1,13 @@
 import React from 'react'
 import Time from './time'
-import Weather from './weather'
 
-export default function WeatherTime() {
+
+export default function WeatherTime({children}) {
   return (
     <div>
       <Time/>
-      <Weather/>
+      {/* 아래 children은 App.js에서 자식요소로 가져온 값(weather -> windy api 지도) */}
+      {children}
     </div>
   )
 }

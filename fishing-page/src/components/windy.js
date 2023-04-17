@@ -8,8 +8,8 @@ const options = {
     verbose: true,
 
     // Optional: Initial state of the map
-    lat: 35.084579,
-    lon: 129.105645,
+    lat: 35.1795543,
+    lon: 129.0756416,
     zoom: 11,
 };
 
@@ -22,7 +22,7 @@ windyInit(options, windyAPI => {
     // .map is instance of Leaflet map
 
     L.popup()
-        .setLatLng([35.084579,  129.105645])
+        .setLatLng([35.1795543,  129.0756416])
         .setContent('Busan')
         .openOn(map);
 });

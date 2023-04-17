@@ -1,5 +1,6 @@
-import React from 'react'
 import "./css/point.css"
+
+
 
 
 export default function Point() {

@@ -1,4 +1,15 @@
-#weather {
-    height: 1500px;
-    background-color: lightblue;
+/* windy에 기본 높이값을 주어 표시되도록 함 */
+#windy {
+    height: 900px;
+    
+}
+/* if문을 사용하여 hidden과 show일 때 값이 화면에 출력되도록 설정 */
+.hidden {
+    overflow: hidden;
+    height: 0;
+}
+
+.show {
+    overflow: visible;
+    height: 1200px;
 }

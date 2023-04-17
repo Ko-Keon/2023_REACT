@@ -4,6 +4,7 @@ import MainIntro from './mainIntro'
 import MainTrip from './mainTrip'
 
 
+
 export class Main extends Component {
   render() {
     return (
@@ -17,3 +18,13 @@ export class Main extends Component {
 }
 
 export default Main
+
+
+
+
+
+
+
+
+
+
