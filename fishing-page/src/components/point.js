@@ -1,10 +1,16 @@
-import "./css/point.css"
+import React from 'react'
+import PointMap from './pointMap'
+import PointSlide from './pointSlide'
+import PointDescription from './pointDescription'
 
 
-
-
-export default function Point() {
+export default function point() {
   return (
-    <div id='point'>point</div>
+    <div>
+      <PointMap/>
+      <PointSlide/>
+      <PointDescription/>
+    </div>
   )
 }
+

@@ -12,6 +12,7 @@ import { useRef } from 'react';
 
 
 
+
 function App() {
   // ref사용, current값을 가지며 dom 요소에 접근
   const WindyApp = useRef(null);
@@ -27,15 +28,16 @@ function App() {
   return (
     <div>
       <Header/>
+        <div style={{marginTop:"52px"}}>
       <Routes>
         <Route path='/' element={<Main/>}/>
         <Route path='/weather' element={<WeatherTime/>}/>
         <Route path='/point' element={<Point/>}/>
       </Routes>
-      
+        </div>
       <Weather ref={WindyApp}/>
-      
       <Footer/>
+      
     </div>
   )
 }

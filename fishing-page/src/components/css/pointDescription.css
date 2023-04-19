@@ -1,0 +1,13 @@
+#table { 
+    margin-left: 30%;
+}
+
+td {
+    width: 500px;
+    font-size: 2rem;
+    height: 100px;
+}
+
+#td1 {
+    height: 200px;
+}

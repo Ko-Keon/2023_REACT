@@ -79,7 +79,7 @@ export default function Board() {
         */}
         {
           boardData &&
-              (state.user.writer === boardData.writer &&
+              (state.user.writer == boardData.writer &&
                 <div>
                   <button
                     onClick={ deleteBoard }

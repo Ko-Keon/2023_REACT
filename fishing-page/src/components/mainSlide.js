@@ -8,6 +8,7 @@ const images = [
     'https://ifh.cc/g/X46BHf.jpg'
     ];
 
+    // setInterval을 사용하여 조작없이 일정 시간이 지나면 자동으로 화면 전환하도록 설정
     function MainSlide() {
         const [index, setIndex] = useState(0);
 

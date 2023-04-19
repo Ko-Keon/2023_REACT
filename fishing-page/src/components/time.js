@@ -39,7 +39,7 @@ export default function Time() {
 
     return(
         <div id='time'>
-                
+                <h1>Calender</h1>
             <div id='buttons'>
                 <h3>2023년</h3>
                 {
