@@ -6,9 +6,9 @@ export class Footer extends Component {
 
     return (
         <div>
-        <footer class="footer">
-        <div class="footer-logo">로고</div>
-        <div class="info">
+        <footer className="footer">
+        <div className="footer-logo">로고</div>
+        <div className="info">
             <p>주소</p>
             <p>대표전화</p>
             <p>SNS</p>

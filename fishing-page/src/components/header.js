@@ -6,12 +6,19 @@ function Header() {
     useEffect(()=>{
         function Scroll() {
             const nav = document.querySelector("#nav")
+            const topButton = document.querySelector("#top")
 
             if(window.scrollY>=200) {
                 nav.classList.add("scrollon")
             }
             else {
                 nav.classList.remove("scrollon")
+            }
+            if(window.scrollY>=500) {
+                topButton.classList.add("scrollon")
+            }
+            else{
+                topButton.classList.remove("scrollon")
             }
         }
         window.addEventListener("scroll",Scroll)
@@ -30,6 +37,7 @@ function Header() {
                 <Link to = "/point">포인트 정보</Link>
             </ul>
         </nav>
+
     </header>
         </div>
     )

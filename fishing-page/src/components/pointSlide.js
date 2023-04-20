@@ -1,28 +1,25 @@
 import React, { useState } from 'react';
-import "./css/pointSlide.css";
+import './css/pointSlide.css';
+import pointInfo from '../api/pointInfo.json'; // 파일 경로를 올바르게 지정
 
-const images = [
-    'https://ifh.cc/g/29nFz2.jpg',
-    'https://ifh.cc/g/CQ6NSX.jpg',
-    'https://ifh.cc/g/NkoM4a.jpg'
-];
+function PointSlide({index,setIndex}) {
+    // useState 훅으로 선택된 이미지 인덱스를 상태로 관리
+    const [imageIndex, setImageIndex] = useState(0);
 
-function PointSlide() {
-    const [index, setIndex] = useState(0);
+
+    const images = pointInfo[index].images; // images 배열을 pointInfo에서 가져옴
 
     function btnPrev() {
-    // 이전 이미지로 이동합니다.
-        setIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-}
+    setImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    }
 
     function btnNext() {
-    // 다음 이미지로 이동합니다.
-        setIndex((prevIndex) => (prevIndex + 1) % images.length);
-}
+    setImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }
 
     return (
-        <div id='point-slide'>
-        <img id='point-slide-img' src={images[index]} alt={`Image ${index + 1}`} />
+    <div id='point-slide'>
+        <img id='point-slide-img' src={images[imageIndex]} alt={`Image ${imageIndex + 1}`} />
         <div id='slide-btn'>
             <button id='prev-btn' onClick={btnPrev}>{'<'}</button>
             <button id='next-btn' onClick={btnNext}>{'>'}</button>
