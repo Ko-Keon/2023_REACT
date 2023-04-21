@@ -1,10 +1,10 @@
-#main-wrap {
-    width: 100%;
+.main-wrap {
+    width: 105%;
     margin: auto;
     position: relative;
 }
 
-#main-title {
+.main-title {
     position: absolute;
     top: 30%;
     left: 50%;
@@ -14,7 +14,7 @@
     vertical-align: middle;
 }
 
-#main-description{
+.main-description{
     position: absolute;
     top: 40%;
     left: 50%;
@@ -22,3 +22,41 @@
     transform: translate(-50%,-50%);
     text-align: center;
 }
+
+.main-wrap {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-title {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: rgba(255,255,255,.1);
+    background-image:url(../img/img.png) ;
+    background-repeat: repeat-x;
+    -webkit-background-clip: text;
+    animation: animate 15s linear infinite;
+}
+@keyframes animate {
+    0%
+    {
+        background-position: left 0px top 80px;
+    }
+    40%
+    {
+        background-position: left 800px top -50px;
+    }
+    80%
+    {
+        background-position: left 1800px top -50px;
+    }
+    100%
+    {
+        background-position: left 2400px top 80px;
+    }
+}
+
+

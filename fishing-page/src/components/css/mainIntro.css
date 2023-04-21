@@ -3,8 +3,7 @@ h1 { font-size: 3.5rem; margin: 20px 0; font-weight: bold;}
 .intro-scroll {
     display: flex;
     align-items: center;
-
-    background-size: cover;
+    height: 100vh;
     padding: 0 20px;
     opacity: 0;
 }
@@ -23,3 +22,9 @@ h1 { font-size: 3.5rem; margin: 20px 0; font-weight: bold;}
     width: 100vw;
     height: inherit; 
 }
+
+.fishing-intro {
+    display: grid;
+    
+}
+

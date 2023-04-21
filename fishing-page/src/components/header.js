@@ -14,7 +14,7 @@ function Header() {
             else {
                 nav.classList.remove("scrollon")
             }
-            if(window.scrollY>=500) {
+            if(window.scrollY>=1500) {
                 topButton.classList.add("scrollon")
             }
             else{

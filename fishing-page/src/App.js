@@ -28,12 +28,14 @@ function App() {
   return (
     <div>
       <Header/>
-        <div style={{marginTop:"52px"}}>
+        <div style={{marginTop:"53px"}}>
+          <div className='background'>
       <Routes>
         <Route path='/' element={<Main/>}/>
         <Route path='/weather' element={<WeatherTime/>}/>
         <Route path='/point' element={<Point/>}/>
       </Routes>
+      </div>
         </div>
       <Weather ref={WindyApp}/>
       <Footer/>

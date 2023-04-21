@@ -10,9 +10,11 @@ export class Main extends Component {
   render() {
     return (
       <div>
-        <div id='main-wrap'>
-          <h1 id='main-title'>Homepage Name</h1>
-          <h4 id='main-description'>homepage description</h4>
+        <div className='main-wrap'>
+          <div className='main-container'>
+          <h1 className='main-title'>Homepage Name</h1>
+          <h4 className='main-description'>homepage description</h4>
+          </div>
         <MainVideo />
         </div>
         <MainIntro />
