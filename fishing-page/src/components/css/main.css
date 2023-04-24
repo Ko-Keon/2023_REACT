@@ -1,12 +1,12 @@
 .main-wrap {
-    width: 105%;
+    width: 100%;
     margin: auto;
     position: relative;
 }
 
 .main-title {
     position: absolute;
-    top: 30%;
+    top: 34%;
     left: 50%;
     width: 100%;
     transform: translate(-50%,-50%);
@@ -16,11 +16,12 @@
 
 .main-description{
     position: absolute;
-    top: 40%;
+    top: 60%;
     left: 50%;
     width: 100%;
     transform: translate(-50%,-50%);
     text-align: center;
+    color: rgba(255, 255, 255, 0.767);
 }
 
 .main-wrap {
