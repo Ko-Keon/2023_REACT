@@ -30,11 +30,14 @@ function Header() {
         <div>
             <header className="head">
         <nav className="nav" id="nav">
-            <div className="logo">Busan Bada Lure</div>
+                <div className='img'></div>
+            <div className="logo">
+                <span className='nav-title'>Busan Bada Lure</span>
+                </div>
             <ul className="nav-menu">
-                <Link to = "/">메인</Link> &nbsp;
-                <Link to = "/weather">날씨 / 물때</Link> &nbsp;
-                <Link to = "/point">포인트 정보</Link>
+                <span id='color1'><Link to = "/">메인</Link> &nbsp;</span>
+                <span id='color2' className='space'><Link to = "/weather">날씨 / 물때</Link> &nbsp;</span>
+                <span id='color3'><Link to = "/point">포인트 정보</Link></span>
             </ul>
         </nav>
 

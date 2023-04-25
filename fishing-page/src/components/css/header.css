@@ -1,13 +1,9 @@
-/*.App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}*/
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
 .head {
     position: fixed;
@@ -17,37 +13,72 @@
 }
 
 .nav {
+    font-family: 'Pretendard-Regular';
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items:center;
     padding: 10px 20px;
     border-bottom: 1px solid black;
     transition: all 1s;
-    
+    background: linear-gradient(to right, #00b4db, #0083b0);
+    color: white;
+}
+
+.nav-title {
+    text-shadow: 1px 1px 1px black;
+}
+
+#color1,#color2,#color3 {
+    background-color: rgb(199, 231, 241);
+    width: 100px;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+#color1 {
+    padding: 15px 45px;
 }
 
 .logo {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
+    margin-left: -32%;
+}
+.img {
+    background-image: url(../img/logo.png);
+    background-size: cover;
+    width: 92px;
+    height: 80px;
+    margin-left: -35%;
 }
 
 #nav.scrollon {
-    color: white;
-    background-color: rgb(95, 118, 247);
+    opacity: 0;
     transition: all 1s;
 }
 
-#nav.nav.scrollon li>a {
-    color: white;
+#nav.nav.scrollon ul a {
+    opacity: 0;
+    transition: all 1s;
+}
+
+#nav.scrollon .img {
+    opacity: 0;
     transition: all 1s;
 }
 
 .nav-menu {
-    display: flex;
+    margin-right: -30%;
+}
+
+.nav-menu .space {
+    margin: 0 100px;
 }
 
 .nav-menu a {
-    font-size: 20px;
+    font-family: 'Pretendard-Regular';
+    font-weight:bolder;
+    font-size: 22px;
     position: relative;
     padding: 6px 12px;
 }
@@ -60,7 +91,7 @@
     transform: translateX(-50%);
     width: 100%;
     height: 4px;
-    background: rgb(0, 122, 153);
+    background: white;
     transition: all 0.5s ease-out;
     opacity: 0;
 }

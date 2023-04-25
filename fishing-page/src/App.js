@@ -28,7 +28,7 @@ function App() {
   return (
     <div>
       <Header/>
-        <div style={{marginTop:"90px"}}>
+        <div style={{marginTop:"101px"}}>
           <div className='background'>
       <Routes>
         <Route path='/' element={<Main/>}/>

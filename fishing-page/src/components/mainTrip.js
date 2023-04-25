@@ -4,7 +4,7 @@ import './css/mainTrip.css'
 function MainTrip() {
     return (
         <div>
-            <h1>나의 조행기</h1>
+            <h1 className='trip-title'>Records</h1>
         <div className='body'>
             <div className='container'>
                 <div className='card'>

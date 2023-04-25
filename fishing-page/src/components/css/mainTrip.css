@@ -5,9 +5,12 @@
 }
 
 .container {
-    margin-top: 100px;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 200px;
     position: relative;
     width: 1200px;
+    height: 800px;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -64,5 +67,12 @@
     opacity: 1;
     margin-top: -80px;
     transition-delay: 0.3s;
+}
+
+.trip-title {
+    font-size: 4rem;
+    margin-left: 10%;
+    color: white;
+    text-shadow: 1px 1px 1px black;
 }
 

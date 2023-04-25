@@ -7,13 +7,13 @@ export class Footer extends Component {
     return (
         <div>
         <footer className="footer">
-        <div className="footer-logo">로고</div>
+        <div className="footer-logo"></div>
         <div className="info">
-            <p>주소</p>
-            <p>대표전화</p>
-            <p>SNS</p>
-            <p>@2022 Busan Bada Lure</p>
-            <a class="top" id="top" href="#">맨위로</a>
+            <p>주소 - 부산광역시 사하구 다대로</p>
+            <p>대표전화 - 010 . 5792 . 8565</p>
+            <p>SNS - @ go_do_aeng</p>
+            <p>@2023 Busan Bada Lure</p>
+            <a class="top" id="top" href="#">Top</a>
         </div>
     </footer>
         </div>

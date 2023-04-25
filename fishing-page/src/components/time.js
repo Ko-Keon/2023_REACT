@@ -23,7 +23,7 @@ console.log(thisMonth)
 // 각 월에 대한 버튼 생성, 클릭시 onClick
 function MonthButton({month,onClick}) {
     return (
-        <button onClick={onClick}>
+        <button className='time-btn' onClick={onClick}>
             {month}
         </button>
     )
@@ -39,7 +39,9 @@ export default function Time() {
 
     return(
         <div id='time'>
+            <div id='time-title'>
                 <h1>Calender</h1>
+            </div>
             <div id='buttons'>
                 <h3>2023년</h3>
                 {
