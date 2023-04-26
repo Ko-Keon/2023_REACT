@@ -22,6 +22,7 @@
     text-align: center;
     margin: auto;
     padding-top: 10px;
+    padding-bottom: 100px;
 }
 
 #time {
@@ -34,7 +35,7 @@
     color: white;
     text-shadow: 1px 1px 1px black;
     padding-top: 50px;
-    padding-left: 120px;
+    padding-left: 200px;
     font-size: 3rem;
 }
 
@@ -62,4 +63,6 @@
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
+
+
 

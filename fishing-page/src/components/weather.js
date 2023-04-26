@@ -22,7 +22,9 @@ export default function Weather() {
   return (
     <div className={ hidden ? 'hidden' : 'show'}>
       {/* index.html 안에 id=windy 값을 찾아 아래 div 빈 공간 안에 대입 */}
+      <div className='title'>
       <h1>Weather</h1>
+      </div>
       <div id="windy"></div>
     </div>
   )

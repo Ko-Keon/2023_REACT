@@ -46,7 +46,7 @@ function PointMap({setIndex}) {
     }, [initMap]);
 
     return (
-        <div id="google-map">
+        <div className="google-map">
             <h1>PointMap</h1>
             <div
                 className="map"
