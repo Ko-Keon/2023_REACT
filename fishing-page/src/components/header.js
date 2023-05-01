@@ -38,6 +38,7 @@ function Header() {
                 <span id='color1'><Link to = "/">메인</Link> &nbsp;</span>
                 <span id='color2' className='space'><Link to = "/weather">날씨 / 물때</Link> &nbsp;</span>
                 <span id='color3'><Link to = "/point">포인트 정보</Link></span>
+                <span id='color4'><Link to = "/post">공지사항</Link></span>
             </ul>
         </nav>
 

@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect } from 'react';
 import Weather from './components/weather';
 import { useRef } from 'react';
+import Post from './components/post';
 
 
 
@@ -34,6 +35,7 @@ function App() {
         <Route path='/' element={<Main/>}/>
         <Route path='/weather' element={<WeatherTime/>}/>
         <Route path='/point' element={<Point/>}/>
+        <Route path='/post' element={<Post/>}/>
       </Routes>
       </div>
         </div>
