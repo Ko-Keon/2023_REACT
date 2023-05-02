@@ -3,7 +3,6 @@ import './css/pointMap.css'
 
 function PointMap({setIndex}) {
     const mapRef = useRef(null);
-    const infoWindowRef = useRef(null);
 
     const initMap = useCallback(() => {
         const map = new window.google.maps.Map(mapRef.current, {
