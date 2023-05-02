@@ -3,8 +3,12 @@ import './css/pointDescription.css'
 import pointInfo from '../api/pointInfo.json'
 
 export default function PointDescription({index}) {
+    // pointInfo json을 통해 값 사용
+    // props 값으로 index 받아와 사용
     const [information, setInformation] = useState(pointInfo)
 
+    // index, key, value 인자값
+    // 해당 인덱스 정보 업데이트
     const updateInfo = (index, key, value) => {
         setInformation(prevInformation => {
             const newInformation = [...prevInformation];
@@ -12,7 +16,7 @@ export default function PointDescription({index}) {
             return newInformation
         })
     }
-
+    // 인덱스의 정보 가져와 사용
     const point = information[index]
 
     return (

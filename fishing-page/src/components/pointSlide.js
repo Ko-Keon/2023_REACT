@@ -9,10 +9,12 @@ function PointSlide({index,setIndex}) {
 
     const images = pointInfo[index].images; // images 배열을 pointInfo에서 가져옴
 
+    // 이전 이미지 보여주는 함수
     function btnPrev() {
     setImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
     }
-
+    
+    // 다음 이미지 보여주는 함수
     function btnNext() {
     setImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     }

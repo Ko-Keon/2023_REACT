@@ -7,7 +7,7 @@ function Header() {
         function Scroll() {
             const nav = document.querySelector("#nav")
             const topButton = document.querySelector("#top")
-
+            // 스크롤이 일정 범위 이상 되었을 때 scrollon css 클래스 적용
             if(window.scrollY>=200) {
                 nav.classList.add("scrollon")
             }
@@ -15,6 +15,7 @@ function Header() {
                 nav.classList.remove("scrollon")
             }
             if(window.scrollY>=1500) {
+                // 1500이상일떄 오른쪽 하단에 top 버튼 생성
                 topButton.classList.add("scrollon")
             }
             else{

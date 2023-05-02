@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import PostList from './postList'
 import './css/post.css'
 

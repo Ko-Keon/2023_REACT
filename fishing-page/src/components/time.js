@@ -17,8 +17,8 @@ const calenders = [
     { month: '12월', img: 'https://ifh.cc/g/fdLB1N.png' },
 ]
 
+// 기본 창이 현재 월의 달력을 띄우기 위해 사용
 const thisMonth = new Date().getMonth();
-console.log(thisMonth)
 
 // 각 월에 대한 버튼 생성, 클릭시 onClick
 function MonthButton({month,onClick}) {

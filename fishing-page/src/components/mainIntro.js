@@ -7,6 +7,7 @@ function MainIntro() {
             
         const intro = document.querySelector("#intro")
 
+        // nav와 마찬가지로 일정 스크롤 이상시 서서히 나타나는 scrollon 적용
             if(window.scrollY>=200) {
             intro.classList.add("scrollon")
             }

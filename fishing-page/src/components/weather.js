@@ -7,9 +7,11 @@ import {useLocation} from 'react-router-dom'
 // false 일 떄 화면이 보이게 하는 함수
 // css에 hidden과 show로 설정해 놓음
 export default function Weather() {
+  // 현재 경로 가져오기
   const location = useLocation();
 
   const [hidden,setHidden] = useState(true)
+
   useEffect(()=>{
     if(location.pathname == '/weather') {
       setHidden(false)
@@ -25,6 +27,7 @@ export default function Weather() {
       <div className='title'>
       <h1>Weather</h1>
       </div>
+      {/* index.html 내부에 id값이 windy인 idv에 windy.js에서 가져온 날씨 정보 출력 */}
       <div id="windy"></div>
     </div>
   )

@@ -89,6 +89,7 @@
     padding: 6px 12px;
 }
 
+/* nav 메뉴 하단 디자인 */
 .nav-menu a::after {
     content: "";
     position: absolute;

@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import './css/modal.css'
 
 export default function PostModalBasic(props) {
+    // 게시글 내용, 게시창 닫기 용도로 아래 props 받아오기
     const {setModalOpen,content} = props
 
     // 모달창 끄기
@@ -30,6 +31,8 @@ export default function PostModalBasic(props) {
     
 
     return (
+        // div에 modalRef를 설정하여 eventListener에서
+        // 모달창을 제외한 바깥 영역인지 판단 가능하게 한다.
         <div ref={modalRef} className='modal-container'>
             <button className='close' onClick={closeModal}>닫기</button>
             <p className='modal-content'>{content}</p>

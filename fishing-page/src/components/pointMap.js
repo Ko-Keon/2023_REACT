@@ -1,9 +1,13 @@
 import React, { useCallback, useEffect, useRef } from "react";
 import './css/pointMap.css'
 
+
+// 구글맵 API 불러와 사용
 function PointMap({setIndex}) {
+    // useRef 훅을 사용하여 맵이 나타날 div 요소 참조
     const mapRef = useRef(null);
 
+    // useCallback 훅을 사용하여 초기화 함수 작성(initMap)
     const initMap = useCallback(() => {
         const map = new window.google.maps.Map(mapRef.current, {
             center: { lat: 35.131525, lng: 129.102670 },
