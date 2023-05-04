@@ -10,6 +10,10 @@ import { useEffect } from 'react';
 import Weather from './components/weather';
 import { useRef } from 'react';
 import Post from './components/post';
+import Login from './components/Login';
+import { Provider, useSelector } from 'react-redux';
+import store from './components/reducer/store';
+import MyFishing from './components/myFishing';
 
 
 
@@ -29,9 +33,11 @@ function App() {
     window.scrollTo(0,0);
   },[navigateTop])
 
+
   
   return (
     <div>
+      <Provider store={store}>
       <Header/>
         <div style={{marginTop:"101px"}}>
           <div className='background'>
@@ -40,11 +46,14 @@ function App() {
         <Route path='/weather' element={<WeatherTime/>}/>
         <Route path='/point' element={<Point/>}/>
         <Route path='/post' element={<Post/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='myfishing' element={<MyFishing/>}/>
       </Routes>
       </div>
         </div>
       <Weather ref={WindyApp}/>
       <Footer/>
+      </Provider>
       
     </div>
   )

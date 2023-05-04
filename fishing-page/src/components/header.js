@@ -14,7 +14,7 @@ function Header() {
             else {
                 nav.classList.remove("scrollon")
             }
-            if(window.scrollY>=1500) {
+            if(window.scrollY>=700) {
                 // 1500이상일떄 오른쪽 하단에 top 버튼 생성
                 topButton.classList.add("scrollon")
             }
@@ -40,6 +40,7 @@ function Header() {
                 <span id='color2' className='space'><Link to = "/weather">날씨 / 물때</Link> &nbsp;</span>
                 <span id='color3'><Link to = "/point">포인트 정보</Link></span>
                 <span id='color4'><Link to = "/post">게시판</Link></span>
+                <span id='color5'><Link to = "/login">Login</Link></span>
             </ul>
         </nav>
 
